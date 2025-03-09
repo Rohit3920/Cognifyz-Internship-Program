@@ -53,7 +53,7 @@ h1#head {
 
 p {
     line-height: 2.5;
-    text-indent: 50px;
+    text-indent: 60px;
     position: relative;
 }
 
@@ -67,7 +67,7 @@ p#second{
 }
 
 img {
-    max-width: 50%;
+    max-width: 45%;
     height: fit-content;
     float: left;
     display: block;
@@ -77,7 +77,6 @@ img {
 /* Form Styles */
 div.formContent{
     width: 100%;
-    float: left;
     text-align: center;
 }
 form {
@@ -112,4 +111,20 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* footer section sytle  */
+footer.footer{
+    width: 100%;
+    /* height: 3rem; */
+    background-color: #333;
+    letter-spacing: 6px;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer h2{
+    margin: 10px 0 -10px 0;
+    font-weight: 400;
 }
