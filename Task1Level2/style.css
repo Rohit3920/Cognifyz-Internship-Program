@@ -9,30 +9,37 @@
 button {
     padding: 0.5rem;
     border-radius: 5px;
-    font-size: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
     border: none;
     cursor: pointer;
+}
+
+button:hover{
+    filter: drop-shadow(1px 1px 4px rgb(38, 38, 38));
 }
 
 
 .container {
     width: 100%;
     min-height: 10em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
 }
 
 #changeEvent, #alertMsg, #calculator {
     padding: 2rem;
-    margin: 1rem;
+    margin: 10px 20px;
     border-radius: 1rem;
     border: 1px solid black;
 }
 
 h2, button {
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 #colorButton {
@@ -41,13 +48,24 @@ h2, button {
 
 }
 
-#calculator button {
-    background-color: orange;
-    color: white;
-    border: 1px solid orange;
+#alertMsg button{
+    background-color: burlywood;
 }
-#calculator  input{
+
+#calculator button {
+    background-color: rgb(183, 35, 183);
+    color: white;
+    border: 1px solid violet;
+}
+
+#calculator input {
     padding: 10px;
+    border: none;
+    outline: none;
+}
+
+input#result {
+    cursor: none;
 }
 
 #calculator {

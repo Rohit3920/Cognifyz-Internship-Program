@@ -31,11 +31,11 @@ function calculateSum() {
     const result = parseFloat(document.getElementById("result").value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        document.getElementById("result").textContent = "Invalid input";
+        alert("Please fill the feilds")
+        document.getElementById("num1").focus();
         return;
     }
 
     const sum = num1 + num2;
-    // document.getElementById("result").textContent = "Result: " + sum;
     document.getElementById("result").value = sum;
 }
