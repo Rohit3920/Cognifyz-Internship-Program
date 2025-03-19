@@ -1,0 +1,47 @@
+#bulmaStyle .card {
+    background-color: #24C6C6;
+    transition-duration: 0.8s;
+    background-blend-mode: color-burn;
+}
+
+#bulmaStyle .card:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gray;
+}
+
+#bootstrapStyle2 .card {
+    width: 100%;
+    height: 100%;
+gap: 10px;
+    background-image: url(Assets/cognifyzLogo.png);
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bootstrapStyle1 .card{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 182, 193, 0.515);
+    transition-duration: 0.8s;
+    background-blend-mode: color-burn;
+}
+
+
+#bootstrapStyle2 div.col-sm-6:nth-child(odd)>div.card {
+    background-color: lightgray;
+}
+
+#bootstrapStyle2 div.col-sm-6:nth-child(even)>div.card {
+    background-color: lightcyan;
+}
+
+#bootstrapStyle2 div.col-sm-6 {
+    transition-duration: 0.8s;
+}
+
+#bootstrapStyle2 div.col-sm-6:hover>div.card {
+    box-shadow: inset 0 0 40px rgba(120, 120, 120, 0.251);
+}
