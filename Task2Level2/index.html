@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Cognify Internship</h2>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="content">
+            <h1>Unlock Your Potential with Cognifyz</h1>
+            <p>Gain real-world experience and kickstart your career with our industry-leading internship programs.</p>
+        </div>
+    </section>
+
+    <section class="internships" id="internships">
+        <h2>Our Internship Programs</h2>
+        <div class="internship-grid">
+            <div class="internship-card">
+                <h3>Front-End Development Internship</h3>
+                <p>Learn to build interactive user interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="internship-card">
+                <h3>Back-End Development Internship</h3>
+                <p>Develop server-side logic and databases to power web applications.</p>
+            </div>
+            <div class="internship-card">
+                <h3>FullStack Web Development</h3>
+                <p>Explore projects and build solution for real world problem with real-world projects.</p>
+            </div>
+            <div class="internship-card">
+                <h3>JavaScript Development</h3>
+                <p>Develop web applications using JavaScript and its frameworks.</p>
+            </div>
+            <div class="internship-card">
+                <h3>JAVA Development</h3>
+                <p>Develop web applications using Java and its frameworks.</p>
+            </div>
+            <div class="internship-card">
+                <h3>Python Development</h3>
+                <p>Develop web applications using Python and its frameworks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="aboutUs">
+        <h2>About Cognifyz Internships</h2>
+        <p>Welcome to Cognifyz Internships, where we empower aspiring professionals to kickstart their careers through
+            immersive learning experiences. Our programs are designed to bridge the gap between academic knowledge and
+            real-world skills, providing interns with the tools and opportunities they need to succeed.</p>
+        <p>At Cognifyz, we believe in fostering a collaborative and innovative environment where interns can learn from
+            industry experts and contribute to meaningful projects. We are committed to providing high-quality
+            internships that offer practical experience, mentorship, and career development opportunities.</p>
+        <p>Our goal is to nurture the next generation of leaders and innovators by providing them with the resources and
+            support they need to achieve their professional aspirations. We offer a diverse range of internships across
+            various fields, including technology, marketing, data science, and more.</p>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form" onsubmit="e => e.preventDefault()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Our Contact Information</h3>
+            <p>Email: info@cognifyzinternships.com</p>
+            <p>Phone: +1 555-123-4567</p>
+            <p>Address: 123 Main Street, Anytown, USA</p>
+        </div>
+        <p class="copyRight">&copy; 2024 Cognifyz Internships. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

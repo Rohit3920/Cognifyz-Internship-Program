@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: all 0.6s;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #D20FB5, #B41AC4, #8B29D8);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-top: 2.5rem;
+    background-image: linear-gradient(rgba(199, 195, 195, 0.5), rgba(228, 228, 228, 0.5)), url('cognifyzLogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 5rem 2rem;
+}
+
+.main .content {
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(to right, #d27e0f, #B41AC4, #8B29D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1.2rem;
+}
+
+
+.internships {
+    width: 100%;
+    min-height: 90vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.internship-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: left;
+    background-image: linear-gradient(to bottom right, #fff, #fff);
+    transition-property: background-image, backdrop-filter;
+    transition: all 0.8s;
+}
+
+.internship-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.internship-card:hover {
+    background-image: linear-gradient(to bottom right, #d20fb5ad, #b31ac4ad, #8B29D8ad);
+
+    color: #fff;
+    backdrop-filter: blur(10px);
+    transform: scale(1.05);
+}
+
+.about {
+    width: 100%;
+    min-height: 90vh;
+    margin: 1rem auto;
+    background-color: #8B29D8;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid lightgray;
+}
+
+.about h2 {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.about p {
+    margin: 1rem 3rem;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.footer-info {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .copyRight {
+    padding: 1.5rem;
+    border-top: 1px solid white;
+}
+
+/* Responsive Styles (Media Queries) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .hamburger {
+        display: block;
+        /* Show hamburger menu on smaller screens */
+    }
+
+    .main {
+        padding: 1rem;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    .internships {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .internship-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    .about p {
+        margin: 1rem 1rem;
+    }
+
+    .contact {
+        padding: 1rem;
+    }
+}
