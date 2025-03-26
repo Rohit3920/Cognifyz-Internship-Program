@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Gallery & Slideshow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+        <img src="Assets/frontend.png" alt="Img not found" class="thumbnail" onclick="showImage(this.src)">
+        <img src="Assets/cognifyzLogo.png" alt="Img not found" class="thumbnail" onclick="showImage(this.src)">
+        <img src="Assets/backend.jpeg" alt="Img not found" class="thumbnail" onclick="showImage(this.src)">
+        <img src="Assets/fullStack.png" alt="Img not found" class="thumbnail" onclick="showImage(this.src)">
+    </div>
+
+    <div class="frontThumnail" id="frontThumnail" onclick="closeShowImage()">
+        <img src="" alt="Front Image" class="frontImage" id="frontImage">
+    </div>
+
+    <h2>Slideshow</h2>
+
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="Assets/frontend.png" alt="img not found">
+        </div>
+        <div class="slides fade">
+            <img src="Assets/backend.jpeg" alt="img not found">
+        </div>
+        <div class="slides fade">
+            <img src="Assets/fullStack.png" alt="img not found">
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

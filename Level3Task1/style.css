@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+    padding:1rem;
+    background-color: chartreuse;
+    margin: 2rem 0;
+}
+
+/* Image Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.frontThumnail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.frontImage {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.frontThumnail img{
+    width: 60%;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+    transition: all 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
