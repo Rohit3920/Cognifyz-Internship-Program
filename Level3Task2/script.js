@@ -3,9 +3,9 @@
 const applyButton = document.querySelector('.apply-button');
 
 if (applyButton) {
-    applyButton.addEventListener('click', function(event) {
+    applyButton.addEventListener('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
-        alert('Apply Now button clicked!'); 
+        alert('Apply Now button clicked!');
         // Replace with your desired action (e.g., open a form)
     });
 }
@@ -15,8 +15,25 @@ if (applyButton) {
 const searchInput = document.querySelector('.search input');
 
 if (searchInput) {
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         console.log('Search query:', searchInput.value);
         // You would typically use this value to filter results
     });
 }
+
+var applyForm = document.getElementById('appleForm')
+document.getElementById('apply-button').addEventListener('click', function () {
+    alert('Apply Now for web development Internship!');
+
+    applyForm.style.display = "block"
+    applyForm.style.visibility = "visible"
+});
+
+document.getElementById('applyForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    applyForm.style.display = "none"
+    applyForm.style.visibility = "hidden"
+    alert("Apple successfully")
+
+})
