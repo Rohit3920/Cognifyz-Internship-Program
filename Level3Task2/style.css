@@ -273,4 +273,23 @@ section.moreInfo div.col .highlights li,
 section.moreInfo div.col .qualifications li {
   margin-bottom: 10px;
   font-size: 1.1em;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+footer .footer-info {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+footer .footer-info p {
+  margin-bottom: 0.5rem;
+}
+footer .copyRight {
+  padding: 1.5rem;
+  border-top: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

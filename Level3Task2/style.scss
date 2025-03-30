@@ -275,8 +275,8 @@ section.moreInfo {
     text-align: center;
     visibility: hidden;
     position: fixed;
-        top: 5%;
-        left: 5%;
+    top: 5%;
+    left: 5%;
 
     div.col {
         width: 50%;
@@ -313,5 +313,27 @@ section.moreInfo {
             margin-bottom: 10px;
             font-size: 1.1em;
         }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+    .footer-info {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer-info p {
+        margin-bottom: 0.5rem;
+    }
+
+    .copyRight {
+        padding: 1.5rem;
+        border-top: 1px solid white;
     }
 }
