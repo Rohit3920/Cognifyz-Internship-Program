@@ -1,39 +1,46 @@
-// Example: Adding a click event listener to the "Apply Now" button
 
 const applyButton = document.querySelector('.apply-button');
 
 if (applyButton) {
     applyButton.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault();
         alert('Apply Now button clicked!');
-        // Replace with your desired action (e.g., open a form)
     });
 }
-
-// Example: Handling search input (basic)
 
 const searchInput = document.querySelector('.search input');
 
 if (searchInput) {
     searchInput.addEventListener('input', function () {
         console.log('Search query:', searchInput.value);
-        // You would typically use this value to filter results
     });
 }
 
 var applyForm = document.getElementById('appleForm')
 document.getElementById('apply-button').addEventListener('click', function () {
-    alert('Apply Now for web development Internship!');
-
     applyForm.style.display = "block"
     applyForm.style.visibility = "visible"
+    alert('Apply Now for web development Internship!');
 });
 
-document.getElementById('applyForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+function subFormData(){
+    const applyForm = document.getElementById('applyForm');
+    applyForm.style.display = "none";
+}
 
-    applyForm.style.display = "none"
-    applyForm.style.visibility = "hidden"
-    alert("Apple successfully")
+var contentHide = document.getElementById("moreInfo");
+document.getElementById('learnMoreBtn').addEventListener('click', function () {
+    if (contentHide.style.visibility === "visible") {
+        contentHide.style.visibility = "hidden";
+        contentHide.style.display = "none";
+    } else {
+        contentHide.style.visibility = "visible";
+        contentHide.style.display = "flex"; // or flex, grid, etc.
+    }
+});
 
+
+contentHide.addEventListener("click", function (){
+    contentHide.style.visibility = "hidden";
+    contentHide.style.display = "none";
 })
