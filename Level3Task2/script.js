@@ -40,7 +40,12 @@ document.getElementById('learnMoreBtn').addEventListener('click', function () {
 });
 
 
-contentHide.addEventListener("click", function (){
+document.getElementById("continueBtn").addEventListener("click", function(){
     contentHide.style.visibility = "hidden";
     contentHide.style.display = "none";
 })
+
+function internshipInfo(){
+    contentHide.style.visibility = "visible";
+        contentHide.style.display = "flex";
+}

@@ -235,6 +235,7 @@ section.moreInfo {
   display: flex;
   flex-direction: row;
   padding: 5%;
+  z-index: 1;
   background: linear-gradient(360deg, #ffffff, #e0f7fa);
   text-align: center;
   visibility: hidden;
@@ -273,6 +274,71 @@ section.moreInfo div.col .highlights li,
 section.moreInfo div.col .qualifications li {
   margin-bottom: 10px;
   font-size: 1.1em;
+}
+section.moreInfo .continueDiv {
+  position: relative;
+}
+section.moreInfo .continueDiv .continueBtn {
+  position: absolute;
+  top: 40%;
+  right: 1rem;
+  width: 2rem;
+  border: 2px dashed orange;
+  height: 2rem;
+  border-radius: 50%;
+}
+section.moreInfo .continueDiv .continueBtn:hover {
+  transform: scale(1.05);
+}
+section.moreInfo .continueDiv .continueBtn i {
+  font-size: 20px;
+  color: orangered;
+}
+
+.moreInternships {
+  background: linear-gradient(360deg, #ffffff, #e0f7fa);
+  padding: 2rem;
+  text-align: center;
+}
+.moreInternships .internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.moreInternships .internship-grid .internship-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: left;
+  background-image: linear-gradient(to bottom right, #fff, #fff);
+  transition-property: background-image, -webkit-backdrop-filter;
+  transition-property: background-image, backdrop-filter;
+  transition-property: background-image, backdrop-filter, -webkit-backdrop-filter;
+  transition: all 0.8s;
+}
+.moreInternships .internship-grid .internship-card h3 {
+  margin-bottom: 0.5rem;
+}
+.moreInternships .internship-grid .internship-card:hover {
+  background-image: linear-gradient(to bottom right, rgba(210, 15, 181, 0.6784313725), rgba(179, 26, 196, 0.6784313725), rgba(139, 41, 216, 0.6784313725));
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transform: scale(1.05);
+}
+.moreInternships .internship-grid #mlearnMoreBtn {
+  border: none;
+  background-color: transparent;
+  color: #0056b3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.moreInternships .internship-grid #mlearnMoreBtn:hover {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 footer {

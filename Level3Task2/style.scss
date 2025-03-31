@@ -271,6 +271,7 @@ section.moreInfo {
     display: flex;
     flex-direction: row;
     padding: 5%;
+    z-index: 1;
     background: linear-gradient(360deg, #ffffff, #e0f7fa);
     text-align: center;
     visibility: hidden;
@@ -314,6 +315,82 @@ section.moreInfo {
             font-size: 1.1em;
         }
     }
+
+    .continueDiv {
+        position: relative;
+
+        .continueBtn {
+            position: absolute;
+            top: 40%;
+            right: 1rem;
+            width: 2rem;
+            border: 2px dashed orange;
+            height: 2rem;
+            border-radius: 50%;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            i {
+                font-size: 20px;
+                color: orangered;
+            }
+        }
+
+    }
+}
+
+.moreInternships {
+    background: linear-gradient(360deg, #ffffff, #e0f7fa);
+    padding: 2rem;
+    text-align: center;
+
+
+    .internship-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .internship-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: left;
+            background-image: linear-gradient(to bottom right, #fff, #fff);
+            transition-property: background-image, backdrop-filter;
+            transition: all 0.8s;
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+
+            &:hover {
+                background-image: linear-gradient(to bottom right, #d20fb5ad, #b31ac4ad, #8B29D8ad);
+
+                color: #fff;
+                backdrop-filter: blur(10px);
+                transform: scale(1.05);
+            }
+        }
+
+        #mlearnMoreBtn {
+            border: none;
+            background-color: transparent;
+            color: #0056b3;
+            text-decoration: underline;
+            font-weight: bold;
+            margin: 10px auto;
+
+            &:hover {
+                color: red;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
+
 }
 
 footer {
